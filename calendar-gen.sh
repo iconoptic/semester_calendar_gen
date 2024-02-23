@@ -61,12 +61,6 @@ cat cal.md | while read line; do
 	fi
 done
 
-#If you need help remembering what's wrong, it's right here.
-#You were trying to fill out the entire template with the text that's pasted in each cell.
-#for i in `seq 1 31`; do
-#	sed -i "s/ $i |/$i [Sim Tech:]\{style=\"color: red;\"\} Sim:\<\/strong\>\<br \/\> \<\/strong\>Cohort:\<br \/\> Hours:\<br \/\> Room:\<br \/\> SME: |/g" cal.md
-#done
-
 cat cal.md
 
 pandoc cal.md -f gfm -o Calendar.docx
